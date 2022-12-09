@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main{
+            width: 90%;
+            height: 90%;
+            /* border: 2px solid red; */
+            display: flex;
+            /* border-radius: 20px; */
+        }
+
+        .parent{
+            width: 33.33%;
+            height: 100%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .parent1{
+            background-color: #e38826;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .parent2{
+            background-color: #006970;
+        }
+
+        .parent3{
+            background-color: #004241;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .child{
+            width: 100%;
+            height: 20%;
+            /* border: 2px solid red; */
+            padding: 2rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: larger;
+            color: white;
+            font-size: larger;
+    font-family: fantasy;
+        }
+        .fa-solid, .fas {
+    font-weight: 900;
+    opacity: 0.5;
+}
+
+
+        button{
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            font-size: larger;
+        }
+        .dot {
+            opacity: 0.5;
+            height: 60px;
+    width: 60px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="parent parent1">
+            <div class="child child1"><span class="dot"></span>
+                <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+            </div>
+            <div class="child child2">SEDAN</div>
+            <div class="child child3">
+                Jo Tenu Dhoop Lageya Ve
+To Main Chhav Ban Javan
+Teri Khushiyon Ke Khaatir Main
+Saare Jaag Se Ladd Jawan
+            </div>
+            <div class="child child4">
+                <button style="color: #E38826;">
+                    SUBMIT
+                </button>
+            </div>
+        </div>
+        <div class="parent parent2">
+         <div class="child child1"><span class="dot"></span>
+            <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+        </div>
+            <div class="child child2">SUVS</div>
+            <div class="child child3">
+                Jo Tenu Dhoop Lageya Ve
+                To Main Chhav Ban Javan
+                Teri Khushiyon Ke Khaatir Main
+                Saare Jaag Se Ladd Jawan            </div>
+            <div class="child child4">
+                <button style="color: #006970;">
+                    SUBMIT
+                </button>
+            </div>
+        </div>
+        <div class="parent parent3">
+         <div class="child child1"><span class="dot"></span>
+            <i class="fa-solid fa-car-side" aria-hidden="true"></i>
+        </div>
+            <div class="child child2">LUXURY</div>
+            <div class="child child3">
+                Jo Tenu Dhoop Lageya Ve
+                To Main Chhav Ban Javan
+                Teri Khushiyon Ke Khaatir Main
+                Saare Jaag Se Ladd Jawan            </div>
+            <div class="child child4">
+                <button style="color: #004241;">
+                    SUBMIT
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
